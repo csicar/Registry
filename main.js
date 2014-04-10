@@ -5,7 +5,14 @@ var use = (function(){
   function get(names){
     names = names.toLowerCase().trim().split(/, |,| /);
     names.forEach(function(name){
-      yepnope('https://raw.githubusercontent.com/csicar/Registry/master/libs/'+name+'.js')
+      yepnope({
+        load: 'https://raw.githubusercontent.com/csicar/Registry/master/libs/'+name+'.js',
+        callback: function(url, result, key){
+          if(!result){
+            yepnope('//cdnjs.cloudflare.com/ajax/libs/'+name+'/1.0/'+name.js)
+          }
+        }
+      })
     })
   }
   var uses = document.querySelectorAll('use, script[use]')

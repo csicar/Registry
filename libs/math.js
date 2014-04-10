@@ -1,0 +1,1 @@
+yepnope('http://cdnjs.cloudflare.com/ajax/libs/mathjs/0.19.0/math.min.js')
