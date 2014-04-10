@@ -1,0 +1,1 @@
+yepnope('//ajax.googleapis.com/ajax/libs/webfont/1.5.2/webfont.js');
