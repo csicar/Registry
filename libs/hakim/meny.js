@@ -1,0 +1,1 @@
+yepnope(['http://lab.hakim.se/meny/js/meny.min.js'])
