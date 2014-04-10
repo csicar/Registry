@@ -18,3 +18,11 @@ function get(url, callback){
   xmlhttp.send();
 }
 get('', function(){})
+
+var use = (function(){
+  return function(name){
+    yepnope('https://raw.githubusercontent.com/csicar/Registry/master/libs/'+name)
+  }
+}())
+
+use('angular.js')
