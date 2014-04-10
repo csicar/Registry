@@ -1,1 +1,1 @@
-yepnope('https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js');
+yepnope('//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js');
