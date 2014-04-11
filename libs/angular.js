@@ -1,1 +1,1 @@
-yepnope('//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js');
+use.get('//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js');

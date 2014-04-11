@@ -10,16 +10,27 @@ var use = (function(){
         return;
       }
       loaded.push(name)
-      yepnope({
-        load: 'https://raw.githubusercontent.com/csicar/Registry/master/libs/'+name+'.js',
-        complete: cb || function(){},
-      })
+      if(name.startsWith('url:')){
+        yepnope({
+          load: url,
+          complete: cb | function(){},
+        })
+      }else{
+        yepnope({
+          load: 'https://raw.githubusercontent.com/csicar/Registry/master/libs/'+name+'.js',
+          complete: cb || function(){},
+        })
+      }
     })
   }
   var uses = document.querySelectorAll('use, script[use], script[src="//csicar.kd.io/p.js"]')
   console.log(uses)
   for(var i = 0; i < uses.length; i++){
     get(uses[i].innerText);
+  }
+  get.orig = location.origin==='file://'?'http:':'';
+  get.get = function(url){
+    yepnope(get.orig+url);
   }
   return get
 }())
