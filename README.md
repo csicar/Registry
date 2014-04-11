@@ -30,14 +30,19 @@ In the `script[use]`-Tag place the libraries that you want to have imported. The
 E.g. if you wanted to import `angular` it would look like:
 
 ```html
-<script use src="//csicar.kd.io/p.js">angular</script>
+<use>angular</use>
 ```
 
 adding `bootstrap` wounld require:
 
 ```html
+<use>angular bootstrap</use>
+```
+There is another way:
+```html
 <script use src="//csicar.kd.io/p.js">angular bootstrap</script>
 ```
+this leaves out the need of to separate elements in your html.
 
 ###Javascript API
 If you feel the need to import libraries in javascript, there is a javascript function, that you can call.
