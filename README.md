@@ -9,7 +9,7 @@ Just put `<script use src="//csicar.kd.io/p.js"></script>` on your html. Done!
 Usage
 ---
 
-###Declarative  Api
+###Declarative/HTML API
 In the `script[use]`-Tag place the libraries that you want to have imported. The script will do the rest for you!
 
 E.g. if you wanted to import `angular` it would look like:
@@ -24,11 +24,14 @@ adding `bootstrap` wounld require:
 <script use src="//csicar.kd.io/p.js">angular bootstrap</script>
 ```
 
-###Imperial Api
+###Javascript API
+If you feel the need to import libraries in javascript, there is a javascript function, that you can call.
 ```javascript
 use('angular bootstrap')
 ```
 
+> **NOTE:** `use` automatically recognises if a library is requested multiple times and will ignore the unnecessary ones.
+ 
 Supported Libraries
 ---
 
