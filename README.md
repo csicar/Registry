@@ -7,7 +7,7 @@ What is `use`?
 It's a library to make it easier to work with other libraries in the browser. So you can go like:
 ```javascript
 <use>bootstrap</use>
-``
+```
 instead of
 ```javascript
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
