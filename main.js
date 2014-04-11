@@ -12,7 +12,7 @@ var use = (function(){
       loaded.push(name)
       yepnope({
         load: 'https://raw.githubusercontent.com/csicar/Registry/master/libs/'+name+'.js',
-        callback: cb || function(){},
+        complete: cb || function(){},
       })
     })
   }
