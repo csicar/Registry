@@ -1,7 +1,22 @@
 `Use`-Registry
 ===
 
-Installation
+What is `use`?
+---
+
+It's a library to make it easier to work with other libraries in the browser. So you can go like:
+```javascript
+<use>bootstrap</use>
+``
+instead of
+```javascript
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+```
+It starts on page load and does not require to be  installed or something like that.
+(That comes with the tradeoff of slightly longer loading times, of course)
+
+Setup
 ---
 
 Just put `<script use src="//csicar.kd.io/p.js"></script>` on your html. Done!
