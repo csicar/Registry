@@ -3,13 +3,17 @@
 
 var use = (function(){
   var loaded = [];
+  var orig = location.origin==='file://'?'http:':'';
+  function url(s){
+    return orig+s;
+  }
   function get(names, cb){
     names = names.toLowerCase().trim().split(/, |,| /);
     names.forEach(function(name){
-      if(loaded.indexOf(name) < 0){
+      if(loaded.indexOf(name) > 0){
         return;
       }
-      loaded.push(name)
+      loaded.push(name);
       if(name.startsWith('url:')){
         yepnope({
           load: url,
@@ -17,20 +21,18 @@ var use = (function(){
         })
       }else{
         yepnope({
-          load: 'https://raw.githubusercontent.com/csicar/Registry/master/libs/'+name+'.js',
+          load: url('//csicar.github.io/Registry/libs/'+name+'.js'),
           complete: cb || function(){},
         })
       }
     })
   }
-  var uses = document.querySelectorAll('use, script[use], script[src="//csicar.kd.io/p.js"]')
-  console.log(uses)
+  var uses = document.querySelectorAll('use, script[use]')
+  get.orig = orig
+  get.url = url
   for(var i = 0; i < uses.length; i++){
     get(uses[i].innerText);
   }
-  get.orig = location.origin==='file://'?'http:':'';
-  get.get = function(url){
-    yepnope(get.orig+url);
-  }
+  
   return get
 }())
