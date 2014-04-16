@@ -3,6 +3,10 @@
 
 var use = (function(){
   var loaded = [];
+  var orig = location.origin==='file://'?'http:':'';
+  function url(s){
+    return orig+s;
+  }
   function get(names, cb){
     names = names.toLowerCase().trim().split(/, |,| /);
     names.forEach(function(name){
@@ -25,10 +29,8 @@ var use = (function(){
     })
   }
   var uses = document.querySelectorAll('use, script[use]')
-  get.orig = location.origin==='file://'?'http:':'';
-  get.url = function(url){
-    return (get.orig+url);
-  }
+  get.orig = orig
+  get.url = url
   for(var i = 0; i < uses.length; i++){
     get(uses[i].innerText);
   }
