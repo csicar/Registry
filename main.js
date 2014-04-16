@@ -25,12 +25,13 @@ var use = (function(){
     })
   }
   var uses = document.querySelectorAll('use, script[use]')
-  for(var i = 0; i < uses.length; i++){
-    get(uses[i].innerText);
-  }
   get.orig = location.origin==='file://'?'http:':'';
   get.url = function(url){
     return (get.orig+url);
   }
+  for(var i = 0; i < uses.length; i++){
+    get(uses[i].innerText);
+  }
+  
   return get
 }())
