@@ -17,7 +17,7 @@ var use = (function(){
         })
       }else{
         yepnope({
-          load: 'https://raw.githubusercontent.com/csicar/Registry/master/libs/'+name+'.js',
+          load: 'http://csicar.github.io/Registry/libs/'+name+'.js',
           complete: cb || function(){},
         })
       }
