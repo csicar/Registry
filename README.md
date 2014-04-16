@@ -5,11 +5,11 @@ What is `use`?
 ---
 
 It's a library to make it easier to work with other libraries in the browser. So you can go like:
-```javascript
+```html
 <use>bootstrap</use>
 ```
 instead of
-```javascript
+```html
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 ```
