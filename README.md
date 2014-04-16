@@ -19,7 +19,7 @@ It starts on page load and does not require to be  installed or something like t
 Setup
 ---
 
-Just put `<script use src="//csicar.kd.io/p.js"></script>` on your html. Done!
+Just put `<script use src="//is.gd/useJS"></script>` on your html. Done!
 
 Usage
 ---
@@ -40,9 +40,9 @@ adding `bootstrap` wounld require:
 ```
 There is another way:
 ```html
-<script use src="//csicar.kd.io/p.js">angular bootstrap</script>
+<script use src="//is.gd/usejs">angular bootstrap</script>
 ```
-this leaves out the need of to separate elements in your html.
+this leaves out the need of to separate elements in your html or want to have standard compliant html.
 
 ###Javascript API
 If you feel the need to import libraries in javascript, there is a javascript function, that you can call.
