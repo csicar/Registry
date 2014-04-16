@@ -1,0 +1,1 @@
+yepnope('https://raw.github.com/less/less.js/master/dist/less-1.7.0.min.js')

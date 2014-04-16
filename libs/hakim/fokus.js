@@ -1,0 +1,1 @@
+yepnope('https://raw.githubusercontent.com/hakimel/Fokus/master/js/fokus.min.js')

@@ -1,0 +1,1 @@
+yepnope('http://lab.hakim.se/flexing-pagination/style.css')
