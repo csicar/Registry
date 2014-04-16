@@ -16,8 +16,9 @@ var use = (function(){
           complete: cb | function(){},
         })
       }else{
+        var self = this;
         yepnope({
-          load: this.url('//csicar.github.io/Registry/libs/'+name+'.js'),
+          load: self.url('//csicar.github.io/Registry/libs/'+name+'.js'),
           complete: cb || function(){},
         })
       }
