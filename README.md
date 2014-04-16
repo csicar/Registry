@@ -60,10 +60,6 @@ All currently supported libraries can be found in the [`libs`](https://github.co
 ###Add Libraries
 To make really `use` really easy to use, it needs to support as many libraries as possible. To add a library, just put a file named `[library name].js` in the [`libs`](https://github.com/csicar/Registry/tree/master/libs)folder. If there is a CDN that provides the library you can use this to pull it:
 ```javascript
-use.get([CDN-URL]);
-```
-or:
-```
 yepnope([CDN-URL]);
 ```
 
