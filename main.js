@@ -56,14 +56,19 @@ var use = (function(){
 			uses = document.getElementsByTagName('use')
 		}
 		uses = [].slice.apply(uses);
-		uses.forEach(function(){
+		uses.forEach(function(use){
 			//call self with the innerText
-			self(uses[i].innerText);
+			self(use.innerText);
 		})
 
 		return uses;
 	}
+	
+	//publish the helper
+	self.url = toUrl;
 
+	//execute the init
+	self.init();
 	//return the function
 	return self;
-})
+}())
