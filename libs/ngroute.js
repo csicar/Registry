@@ -1,0 +1,1 @@
+yepnope('//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js');

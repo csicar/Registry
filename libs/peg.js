@@ -1,0 +1,1 @@
+yepnope('//pegjs.majda.cz/vendor/pegjs/peg.js');

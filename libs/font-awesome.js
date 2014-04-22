@@ -1,0 +1,1 @@
+yepnope('//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css');
