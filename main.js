@@ -22,6 +22,7 @@ var use = (function(){
 			var url;
 			//library already loaded?
 			if(loadedLibraries.indexOf(library) > 0){
+				callback();
 				return;
 			}else{
 				//add to the loaded Libraries
@@ -63,7 +64,7 @@ var use = (function(){
 
 		return uses;
 	}
-	
+
 	//publish the helper
 	self.url = toUrl;
 
